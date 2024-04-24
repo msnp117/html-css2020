@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>titulo de la pestaña</title>
+	<meta charset="utf-8"><!-- es la codificacion que permite colocar acentos o cualquier caracter especial en nuestra pagina-->
+	<meta name="keywords" content=""><!--sirve para colocar palabras clave que identificaran nuestra pagina-->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="copyright" content=""><!-- quien es el dueño de ese contenido que tiene copyright-->
+	<link rel="icon" href="BTS.ico">
+</head>
+<body>
+
+	<a href="#codigo">codigo</a>
+
+	<h1>titulo</h1>
+	<h2>titulo</h2>
+	<h3>titulo</h3>
+	<h4>titulo</h4>
+	<h5>titulo</h5>
+	<h6>titulo</h6>
+	<!--No se puede poner mas de un h1, el h2 y h3 de forma moderada, y el h4 5 y 6 ilimitado-->
+	<!--Si ponemos el marcador en un lugar y mientras presionamos la tecla ctrl ponemos el marcador en otro lugar, generamos dos marcadores o los que queramos-->
+
+	<p> parrafo	parrafoparrafo	parrafoparrafo	parrafoparrafo	parrafoparrafo	parrafoparrafo	parrafoparrafo	parrafoparrafo	parrafoparrafo	parrafoparrafo	parrafoparrafo	parrafoparrafo	parrafoparrafo	parrafoparrafo	parrafoparrafo	parrafo</p>
+	<!--Si escribimos lorem y le damos a la tecla Tab, nos genera un párrafo de relleno-->
+
+	<b>negrita</b>
+	<i>cursiva</i>
+	<u>subrayado</u>
+	<s>tachado</s>  
+	<small>chiquita</small>
+	<a href="https://google.com">ruta externa</a>
+	<a href="pagina2.html">ruta local</a>
+	<!--Existen rutas locales (son las que estan en nuestra carpeta o nuestro servidor, se citan con el nombre tal cual si estan dentro de la misma carpeta o sino poniendo el nombre de la carpeta, barra y el nombre de la pagina. Para volver a la carpeta anterior se coloca ../) y rutas externas (son las que no tenemos de manera local, se utiliza el protocolo http o https, seguido de ://)-->
+
+	<br> <!--sirve para completar la linea, es decir, todo lo que venga despues lo tira abajo, es como un enter, la cantidad de br es la cantidad de lineas que salta-->
+	<a href="https://google.com" target="_BLANK">Google</a> <!--el atributo target="_BLANK" sirve para abrir la pagina del enlace en una pestaña nueva-->
+
+	<ul>
+		<li>lista desordenada</li>
+		<li>items de la lista</li>
+	</ul>
+	<ol>
+		<li>lista ordenada</li>
+		<li>items de la lista</li>
+	</ol> 
+
+	<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/south-korean-boy-band-bts-backstage-during-the-61st-annual-news-photo-1097661412-1565598626.jpg" width="200"><!--si el dueño de la imagen la borra, en nuestra pagina no aparecera nada-->
+	<img src="BTS.png" width="200px" alt="BTS" title="Bangtan"> 
+	<!--alt es infaltable-->
+	<!--width sirve para determinar el ancho de la imagen y height sirve para determinar el alto-->
+	<!-- se recomienda no utilizar width y height porque luego en css ya no se podra cambiar, y html no es para diseñar sino para estructurar, por lo que es completamente innecesario-->
+
+	<video src="BTS Dynamite.webm" controls="" height="200"><!-- el atributo controls nos permite acceder a los controles del video definidos por el navegador-->
+	</video>
+	<audio src="BTs Dynamite.webm" controls="">
+		<!--es lo mismo que en video-->
+	</audio>
+
+	<div><!--sirve para separar y agrupar contenido-->
+	</div>
+
+	<form><!--formulario-->
+		<input type="text"><!-- es una entrada de datos-->
+		<input type="password" required=""><!--el atributo required indica que es necesario completar el campo para enviar el formulario-->
+		<input type="number" value=""><!--el valor del atributo value es lo que habra dentro del input-->
+		<input type="email">
+		<input type="color">
+		<input type="range" min="10" max="1000">
+		<input type="date">
+		<input type="time">
+		<input type="button" value="Boton">
+		<input type="submit">
+		<textarea></textarea>
+		<textarea readonly="">solo lectura</textarea>
+	</form>
+
+	<header>
+		<nav>
+			<ul>
+				<li>cosas</li>
+				<li>cosas</li>
+				<li>cosas</li>
+				<li>cosas</li>
+				<li>cosas</li>
+			</ul>
+		</nav>
+	</header>
+	<!--el header es el encabezado de nuestra pagina
+		el header y el nav van de la mano, son la seccion que muestra al usuario por donde puede navegar dentro del sitio web-->
+	<article>
+		<section>
+			<h1>Subtitulo</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum natus quod minima qui, ea facilis. Non totam ad minus numquam saepe. Exercitationem, ut! Consequatur incidunt necessitatibus rem accusamus excepturi ex!</p>
+		</section>
+	</article>
+	<aside><!--es lo que va al costado de la pagina-->
+		<h2>subtitulo</h2>
+		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, neque! Facilis rem totam deserunt, vitae, recusandae animi ea voluptates aliquam nemo ullam quasi, omnis vero unde dolorum suscipit nesciunt, voluptate.</p>
+	</aside>
+	<footer><!--generalmente se usa para colocar contactos o redes sociales-->
+		<h4>copyright</h4>
+	</footer>
+
+	<table border="1">
+		<tr><!--define las filas-->
+			<td></td><!--define los campos-->
+			<td></td>
+			<td></td>
+		</tr>
+		<tr><!--define las filas-->
+			<td></td><!--define los campos-->
+			<td></td>
+			<td></td>
+		</tr>
+		<tr><!--define las filas-->
+			<td></td><!--define los campos-->
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+
+	<h2 id="codigo">codigo</h2>
+
+</body> 
+</html>

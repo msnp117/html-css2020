@@ -1,0 +1,126 @@
+/*existen cuatro formas de aplicar css a un codigo html:
+1- estilo en linea
+2- estilos definidos por la etiqueta style
+3- en un archivo externo, con la etiqueta link (la forma mas correcta y optima)
+4- import (no recomendado)*/
+
+selector {
+	propiedad: valor;
+}
+
+* { /*selector universal, selecciona todo*/
+	color: ;
+}
+
+h1 {/*selector de tipo, seleeciona por el nombre de los elementos*/
+	color: blue;
+}
+
+.titulo-h2 {/*selector de clases, selecciona los elementos que tengan el atributo class y determinado nombre*/
+	color: green;
+}
+
+#element {/*selector de ID, selecciona un unico elemento con el atributo id y determinado nombre*/
+	color: yellow;
+}
+
+/*selector por atributo, selecciona todos los elementos que tengan el atributo mencionado*/
+[atributo="valor"]{
+	color: brown;
+}
+
+/*selector descendiente, selecciona los elementos dentro de otros elementos ordenados de afuera hacia adentro */
+h2 p{
+	color: violet;
+}
+
+.alv b {
+	color: pink;
+}
+
+.alv b span {
+	color: orange;
+}
+
+/*selector de pseudoclases, hace que cuando pasemos el mouse por encima del texto, este cambie de color */
+.alv b:hover{
+	color: lightblue;
+} 
+
+/*!jerarquia: important-estilos en linea-identificadores-clases,pseudoclases,atributos-elementos,pseudoelementos*/
+/*si son de la misma jerarquia, se guia por especificidad, es decir, lo ultimo vale mas*/
+
+.abcd {
+	color: lightgreen !important /*es lo mas importante, no se puede cambiar por nada*/
+}
+
+
+
+/*METODOLOGIA BEM*/
+
+.contact-form__input{
+	color: blue;
+}
+.contact-form__input--active {
+	color: red;
+}
+
+
+/*unidades*/
+/*en css hay dos unidades de medida, las relativas y las fijas*/
+/*las relativas dependen de algo, son variables*/
+/*con las medidas relativas, el contenido se adapta a la pantalla*/
+/*con las medidas fijas el contenido saldria de pantalla (o algo asi)*/
+/*las fijas son fijas, son pixeles, milimetros, puntos,centimetros*/
+/*responsive desing es para adaptar las paginas a telefonos, tablets*/
+
+.butter-form {
+
+}
+
+.butter-form__h2 {
+	font-size: 50mm ;/*esta propiedad cambia el tamaño de la letra*/
+}
+
+/*EM: medida relativa*/
+/*por defecto un EM son 16 pixeles*/
+/*el contenedor define el valor del EM*/
+/*1EM es igual al valor que le demos a  la caja contenedora*/
+
+.dynamite-form {
+	font-size: 25px;
+} 
+
+.dynamite-form__h2 {
+	font-size: 5em ; 
+}
+
+/*viewport width y height*/
+/*estas medidas lo que haces es ocupar todo el ancho de la pantalla*/
+/*el dispositivo tiene 1280 por 720*/
+/*100 viewport width van a ser igual al largo total*/
+/*100 viewport height van a ser igual al alto total*/
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+.dope-form {
+	font-size: 25px;
+	background-color: #000; /*color de fondo */
+	width: 50vw; 
+	height: 50vh;
+	/*tambien se puede escribir en porcentaje*/
+	/*pero entonces se trabaja en el porcentaje de la caja que la contiene*/
+}
+
+.idol-form__h2 {
+	font-size: 2em;
+	font-family: arial ;/*es la tipografía*/
+	/*se puede ir a google fonts, copiar el link de un tipo de letra
+	que nos guste, pegarlo en el head del archivo html y luego llamarlo
+	con el nombre que nos indique*/
+	line-height: 2; /*es como el interlineado*/
+	font-weight: 900; /*es el grosor de la letra*/
+}

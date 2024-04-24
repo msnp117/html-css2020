@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+.contenedor{
+    position: relative;
+    background: green;
+    width: 400px;
+    height: 400px;
+    margin: 50px;
+    outline: 10px solid red;
+}
+div div{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    outline: 10px solid red;
+}
+.caja2{
+    right: 0;
+}
+.caja3{
+    right:0;
+    bottom:0;
+}
+.caja4{
+    bottom: 0;;
+}
+.caja5{
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
